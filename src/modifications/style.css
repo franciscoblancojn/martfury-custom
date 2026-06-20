@@ -198,7 +198,7 @@
 .woocommerce-cart.woocommerce-page .woocommerce-cart-form__cart-item td {
   vertical-align: middle !important;
 }
-.woocommerce-cart.woocommerce-page .woocommerce-cart .coupon br {
+.woocommerce-cart.woocommerce-page .coupon br {
   display: none;
 }
 .woocommerce-cart.woocommerce-page .woocommerce-shipping-calculator.woocommerce-shipping-calculator.woocommerce-shipping-calculator label {
@@ -227,7 +227,7 @@
 .woocommerce-cart.woocommerce-page .woocommerce-info::before {
   color: var(--mf-background-primary-color) !important;
 }
-.woocommerce-cart.woocommerce-page .woocommerce-cart .woocommerce .cart-collaterals .woocommerce-shipping-calculator .shipping-calculator-button {
+.woocommerce-cart.woocommerce-page .woocommerce .cart-collaterals .woocommerce-shipping-calculator .shipping-calculator-button {
   margin-bottom: 40px !important;
 }
 .woocommerce-cart.woocommerce-page .city_select {
