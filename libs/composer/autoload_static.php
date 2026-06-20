@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitGPAI
+class ComposerStaticInitMACU
 {
     public static $prefixLengthsPsr4 = array (
         'f' => 
@@ -36,9 +36,9 @@ class ComposerStaticInitGPAI
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitGPAI::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitGPAI::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInitGPAI::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitMACU::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitMACU::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitMACU::$classMap;
 
         }, null, ClassLoader::class);
     }

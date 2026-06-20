@@ -3,6 +3,6 @@
         "franciscoblancojn/wordpress_utils": "^1"
     },
     "config": {
-        "autoloader-suffix": "GPAI"
+        "autoloader-suffix": "MACU"
     }
 }
