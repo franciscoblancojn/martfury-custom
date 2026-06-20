@@ -1,0 +1,47 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "username": "developer",
+  "instructions": ["AGENTS.md", "CONTEXT.md"],
+  "agent": {
+    "gpai-dev": {
+      "description": "WordPress plugin developer especializado en Martfury Custom. Usa este agente cuando trabajes en funcionalidades del plugin MACU.",
+      "mode": "subagent",
+      "permission": {
+        "edit": "allow",
+        "bash": {
+          "git diff *": "allow",
+          "git log *": "allow",
+          "git status": "allow",
+          "npm *": "allow",
+          "*": "ask"
+        }
+      }
+    },
+    "gpai-reviewer": {
+      "description": "Revisor de código que valida que los cambios cumplan las reglas del plugin MACU y WordPress Coding Standards.",
+      "mode": "subagent",
+      "permission": {
+        "edit": "deny",
+        "bash": {
+          "git diff *": "allow",
+          "git log *": "allow",
+          "git status": "allow",
+          "*": "deny"
+        }
+      }
+    }
+  },
+  "skills": {
+    "paths": [".rules"]
+  },
+  "permission": {
+    "edit": "allow",
+    "bash": {
+      "git *": "allow",
+      "npm *": "allow",
+      "composer *": "allow",
+      "wp *": "ask",
+      "*": "ask"
+    }
+  }
+}
