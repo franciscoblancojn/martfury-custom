@@ -98,6 +98,6 @@ Toda opción global debe usar `MACU_USE_DATA_BASE` o una subclase. No uses `add_
 - ✗ NO hardcodees URLs o paths — usa `MACU_URL`, `MACU_DIR`.
 - ✗ NO añadas archivos nuevos sin require desde `src/_.php` o desde subcarpetas `src/*/_.php`.
 
-## 6. Objetivo del plugin
+## 7. Objetivo del plugin
 
 Cargar los datos de /src/modifications como si fueran un tema hijo, agregando css y sobrescribiendo los archivos .php cuando estos sean cargaos por el tema Martfury
