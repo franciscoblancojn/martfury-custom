@@ -97,7 +97,39 @@ Toda opción global debe usar `MACU_USE_DATA_BASE` o una subclase. No uses `add_
 - ✗ NO uses sintaxis moderna de PHP (>=7.0) — el plugin requiere PHP 5.6+.
 - ✗ NO hardcodees URLs o paths — usa `MACU_URL`, `MACU_DIR`.
 - ✗ NO añadas archivos nuevos sin require desde `src/_.php` o desde subcarpetas `src/*/_.php`.
+- ✗ NO edites `src/_.php` sin entender los hooks que registra (`template_include`, `woocommerce_locate_template`).
 
-## 7. Objetivo del plugin
+---
 
-Cargar los datos de /src/modifications como si fueran un tema hijo, agregando css y sobrescribiendo los archivos .php cuando estos sean cargaos por el tema Martfury
+## 7. Objetivo del plugin 🎯
+
+Cargar los datos de `src/modifications/` como si fueran un tema hijo, agregando CSS y sobrescribiendo los archivos .php del tema Martfury.
+
+### Cómo funciona
+
+La clase `MACU_CORE` en `src/_.php` se encarga de todo:
+
+| Función | Hook | Propósito |
+|---------|------|-----------|
+| `enqueueStyles()` | `wp_enqueue_scripts` | Encola `src/modifications/style.css` en el frontend |
+| `locateWooTemplate()` | `woocommerce_locate_template` | Busca templates WooCommerce en `src/modifications/woocommerce/` primero |
+| `locateThemeTemplate()` | `template_include` | Reemplaza cualquier template PHP del tema Martfury por su equivalente en `src/modifications/` |
+
+### Estructura esperada de `src/modifications/`
+
+```
+src/modifications/
+├── style.css                        → CSS frontal
+├── woocommerce/                     → Templates WooCommerce
+│   ├── cart/cart.php
+│   ├── checkout/
+│   └── ...
+└── (cualquier template de Martfury) → Reemplaza al del tema
+```
+
+### Reglas para modifications
+
+- Los archivos .php dentro de `src/modifications/` deben copiar exactamente la misma estructura de directorios que el tema Martfury (ej: `page.php` → `src/modifications/page.php`).
+- El CSS en `style.css` se encola automáticamente; no necesita `@import` ni `wp_enqueue_style` manual.
+- Para WooCommerce, la ruta dentro de `src/modifications/woocommerce/` debe coincidir con la esperada por WooCommerce (ej: `cart/cart.php`).
+- Todos los archivos PHP deben tener `defined('ABSPATH') || exit;` y seguir los estándares del punto 1.
