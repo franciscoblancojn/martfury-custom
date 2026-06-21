@@ -401,6 +401,10 @@
   min-height: 50px;
   color: var(--wc-form-color-text, #444) !important;
 }
+.woocommerce-cart .woocommerce .cart-collaterals .cart_totals table.shop_table,
+.woocommerce-cart .woocommerce table.shop_table td .quantity,
+.woocommerce-cart.woocommerce-page .city_select,
+.woocommerce-cart .woocommerce .coupon .input-text,
 .woocommerce form .form-row select,
 .woocommerce form .form-row .select2-container .select2-selection--single,
 .woocommerce form .form-row .input-text,
