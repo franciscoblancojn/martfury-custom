@@ -441,4 +441,5 @@
   font-size: 18px !important;
   --button-spacing: 0px;
   line-height: 52px !important;
+  min-height: 52px !important;
 }
