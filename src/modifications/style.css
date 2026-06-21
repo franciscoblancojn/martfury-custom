@@ -437,3 +437,7 @@
     display: none;
   }
 }
+.buy-now-button{
+  font-size: 18px !important;
+  --button-spacing: 0px;
+}
