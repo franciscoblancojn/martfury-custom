@@ -1,6 +1,6 @@
 # 🚀 Martfury Custom
 
-> **Version:** 1.0.10 | **License:** GPLv2+ | **Requires PHP:** 5.6+
+> **Version:** 1.0.11 | **License:** GPLv2+ | **Requires PHP:** 5.6+
 
 Plugin WordPress que extiende el tema **Martfury** con un sistema de modificaciones estilo **tema hijo**, permitiendo sobrescribir templates y agregar CSS sin tocar el tema padre.
 
