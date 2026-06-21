@@ -376,10 +376,11 @@
   position: relative;
   top: 0;
   left: 0;
+    width: 100%;
 }
 .woocommerce div.product div.images .product-image-ms,
 .woocommerce div.product div.images .flex-control-nav .slick-arrow {
-  display: none;
+  display: none !important;
 }
 .woocommerce div.product form.cart .wcboost-wishlist-button {
   padding: 0 !important;
