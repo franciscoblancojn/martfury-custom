@@ -320,6 +320,7 @@
 .woocommerce-variation-add-to-cart .actions-button {
   display: flex;
   align-items: center;
+  gap: 1rem;
 }
 .woocommerce-variation-add-to-cart .e-atc-qty-button-holder {
   display: flex;
@@ -341,7 +342,7 @@
   justify-content: center;
   top: 0;
   left: 0;
-  background: var(--mf-background-primary-color) !important;
+  background: #f14705 !important;
   color: var(--mf-background-primary-text-color);
   animation: move_line 3s infinite;
 }
@@ -361,4 +362,37 @@
 }
 .single_add_to_cart_button {
   --button-spacing: 0px;
+}
+.slick-slider .slick-list,
+.slick-track {
+  height: auto !important;
+  transform: none !important;
+}
+.woocommerce div.product div.images .flex-control-nav {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.woocommerce div.product div.images .product-image-ms,
+.woocommerce div.product div.images .flex-control-nav .slick-arrow {
+  display: none;
+}
+.woocommerce div.product form.cart .wcboost-wishlist-button {
+  padding: 0 !important;
+}
+@media (max-width: 767px) {
+  .wa-order-class {
+    width: 100%;
+    display: block;
+  }
+  .wa-order-button {
+    width: 100%;
+  }
+}
+.top-promotion .promotion-content .link,
+.elementor-button,
+.header-countdown,
+.btn-shop,
+.button{
+  border-radius: 1rem !important;
 }
