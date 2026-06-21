@@ -432,3 +432,8 @@
 .e-atc-qty-button-holder{
   
 }
+@media (max-width:991px) {
+  #topbar{
+    display: none;
+  }
+}
