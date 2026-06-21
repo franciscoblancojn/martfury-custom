@@ -301,38 +301,39 @@
   padding: 0;
 }
 
-.woocommerce div.product .woocommerce-product-gallery .woocommerce-product-gallery__image{
-	width:100%;
+.woocommerce
+  div.product
+  .woocommerce-product-gallery
+  .woocommerce-product-gallery__image {
+  width: 100%;
 }
-.woocommerce-variation-add-to-cart{
-	
+.woocommerce-variation-add-to-cart {
 }
-.woocommerce-variation-add-to-cart .e-atc-qty-button-holder{
-	
+.woocommerce-variation-add-to-cart .e-atc-qty-button-holder {
 }
 .woocommerce div.product form.cart .mf-compare-button,
 .woocommerce div.product form.cart .yith-wcwl-add-to-wishlist,
 .woocommerce div.product form.cart .wcboost-wishlist-button {
-	float:none !important;
+  float: none !important;
   margin: 0 !important;
 }
-.woocommerce-variation-add-to-cart .actions-button{
+.woocommerce-variation-add-to-cart .actions-button {
   display: flex;
   align-items: center;
 }
-.woocommerce-variation-add-to-cart .e-atc-qty-button-holder{
-	display: flex;
-	align-items: center;
-	gap: 1rem;
-	flex-wrap: wrap !important;
-	margin-bottom: 15px;
+.woocommerce-variation-add-to-cart .e-atc-qty-button-holder {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap !important;
+  margin-bottom: 15px;
 }
-.woocommerce .ribbons .ribbon{
+.woocommerce .ribbons .ribbon {
   background: var(--mf-background-primary-color) !important;
   color: var(--mf-background-primary-text-color);
   animation: move_line 4s infinite;
 }
-.woocommerce span.onsale{
+.woocommerce span.onsale {
   width: 6rem;
   aspect-ratio: 1 / 1;
   display: flex;
@@ -345,16 +346,19 @@
   animation: move_line 3s infinite;
 }
 @keyframes move_line {
-	0%{
-		transform: translateX(-5px);
-	}
-	5%{
-		transform: translateX(5px);
-	}
-	95%{
-		transform: translateX(5px);
-	}
-	100%{
-		transform: translateX(-5px);
-	}
+  0% {
+    transform: translateX(-5px);
+  }
+  5% {
+    transform: translateX(5px);
+  }
+  95% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(-5px);
+  }
+}
+.single_add_to_cart_button {
+  --button-spacing: 0px;
 }
