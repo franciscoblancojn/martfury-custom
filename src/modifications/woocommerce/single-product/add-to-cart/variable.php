@@ -81,32 +81,11 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 				 */
 				do_action( 'woocommerce_after_single_variation' );
 				?>
-
-				<button type="button" class="button alt buy-now">
-					Pagar ahora
-				</button>
             </div>
 		<?php endif; ?>
 
 		<?php do_action( 'woocommerce_after_variations_form' ); ?>
     </form>
-
-	<script>
-		jQuery(function($){
-			$('.buy-now').on('click', function(e){
-				var variation_id = $('input.variation_id').val();
-				if (!variation_id) {
-					alert('Por favor selecciona todas las opciones del producto antes de continuar.');
-					return;
-				}
-				$('form.cart').append(
-					'<input type="hidden" name="buy-now" value="1">'
-				);
-				$('form.cart').attr('action', '<?php echo esc_url( wc_get_checkout_url() ); ?>');
-				$('form.cart').submit();
-			});
-		});
-	</script>
 
 <?php
 do_action( 'woocommerce_after_add_to_cart_form' );

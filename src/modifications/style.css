@@ -437,6 +437,7 @@
     display: none;
   }
 }
+.single_variation_wrap .buy-now,
 .buy-now-button{
   font-size: 18px !important;
   --button-spacing: 0px;
