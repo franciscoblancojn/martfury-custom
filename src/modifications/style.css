@@ -162,7 +162,7 @@
 .widget_shopping_cart_content .elementor-button--view-cart {
   background: #fff;
   border: 1px solid #ccc;
-  color: #000;
+  color: #000 !important;
 }
 .widget_shopping_cart_content {
   /* CHECKOUT */
@@ -196,6 +196,10 @@
 [for="payment_method_wompi"] img {
   max-width: 115px;
 }
+.woocommerce-checkout #payment ul.payment_methods li img {
+  max-width: 115px;
+}
+
 .woocommerce-cart.woocommerce-page .woocommerce-cart-form__cart-item p,
 .woocommerce-cart.woocommerce-page .woocommerce-cart-form__cart-item br {
   display: none;
@@ -343,7 +347,7 @@
   top: 0;
   left: 0;
   background: #f14705 !important;
-  color: var(--mf-background-primary-text-color);
+  color: #fff;
   animation: move_line 3s infinite;
 }
 @keyframes move_line {
@@ -389,10 +393,28 @@
     width: 100%;
   }
 }
+.woocommerce form .form-row select {
+  border: 1px solid #ccc !important;
+  padding: 10px 16px !important;
+  height: auto;
+  border-radius: 0 !important;
+  min-height: 50px;
+  color: var(--wc-form-color-text, #444) !important;
+}
+.woocommerce form .form-row select,
+.woocommerce form .form-row .select2-container .select2-selection--single,
+.woocommerce form .form-row .input-text,
+.site-footer
+  .footer-newsletter
+  .newsletter-form
+  .mc4wp-form-fields
+  input[type="email"],
+[type="submit"],
+.woocommerce .ribbons .ribbon,
 .top-promotion .promotion-content .link,
 .elementor-button,
 .header-countdown,
 .btn-shop,
-.button{
+.button {
   border-radius: 1rem !important;
 }
