@@ -1,6 +1,6 @@
 {
   "name": "martfury-custom",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "Este plugin agrega customizaciones para el tema Martfury.",
   "main": "index.js",
   "scripts": {
