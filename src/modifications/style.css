@@ -444,3 +444,7 @@ ul.products li.product .product-inner {
   line-height: 52px !important;
   min-height: 52px !important;
 }
+.search-results .woocommerce ul.products li.product {
+    width: auto;
+    max-width: 25%;
+}
