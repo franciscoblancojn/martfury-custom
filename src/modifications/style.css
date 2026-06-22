@@ -279,7 +279,7 @@
   flex-direction: column;
   height: 100%;
 }
-.mf-products-of-category .products-box ul.products li.product .product-inner {
+ul.products li.product .product-inner {
   height: 100%;
   display: grid;
   grid-template-rows: auto 1fr;
