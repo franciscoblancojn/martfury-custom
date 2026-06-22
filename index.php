@@ -3,7 +3,7 @@
 Plugin Name: Martfury Custom
 Plugin URI: https://github.com/franciscoblancojn/martfury-custom
 Description: Este plugin agrega customizaciones para el tema Martfury.
-Version: 1.0.18
+Version: 1.0.19
 Author: franciscoblancojn
 Author URI: https://franciscoblanco.vercel.app/
 License: GPL2+
