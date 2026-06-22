@@ -30,7 +30,7 @@ global $product;
 
 	<button type="submit" class="single_add_to_cart_button button alt<?php echo esc_attr( wc_wp_theme_get_element_class_name( 'button' ) ? ' ' . wc_wp_theme_get_element_class_name( 'button' ) : '' ); ?>"><?php echo esc_html( $product->single_add_to_cart_text() ); ?></button>
 
-	<button type="button" class="button alt buy-now" data-checkout-url="<?php echo esc_url( wc_get_checkout_url() ); ?>">
+	<button type="submit" class="button alt buy-now" formaction="<?php echo esc_url( wc_get_checkout_url() ); ?>">
 		Pagar ahora
 	</button>
 
@@ -45,13 +45,9 @@ global $product;
 jQuery(document.body).on('click', '.buy-now', function(e) {
 	var $form = jQuery(this).closest('form.cart');
 	var variation_id = $form.find('input.variation_id').val();
-	if (!variation_id) {
+	if (!variation_id || variation_id === '0') {
 		alert('Por favor selecciona todas las opciones del producto antes de continuar.');
-		return;
+		e.preventDefault();
 	}
-	var checkout_url = jQuery(this).data('checkout-url');
-	$form.append('<input type="hidden" name="buy-now" value="1">');
-	$form.attr('action', checkout_url);
-	$form.submit();
 });
 </script>
