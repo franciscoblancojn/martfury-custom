@@ -476,4 +476,18 @@ ul.products li.product .product-inner {
    .slick-track li{
     
    }
+   /* .slick-track .slick-slide{
+    width: calc(100vw - 10px) !important;
+   } */
+}
+@media (max-width:575px) {
+   .slick-track .slick-slide{
+    width: calc(100vw - 10px) !important;
+   }
+   .mobile-version.woocommerce div.product div.images .flex-control-nav li img{
+    height: 8px;
+   }
+   .single-product .related.products{
+    display: none;
+   }
 }
