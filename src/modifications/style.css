@@ -469,3 +469,11 @@ ul.products li.product .product-inner {
     height: 52px !important;
   }
 }
+@media (max-width:575px) {
+   .woocommerce ul.products li{
+    width: 100%;
+   }
+   .slick-track li{
+    
+   }
+}
