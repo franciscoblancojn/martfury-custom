@@ -470,7 +470,7 @@ ul.products li.product .product-inner {
   }
 }
 @media (max-width:575px) {
-   .woocommerce ul.products li{
+   .woocommerce ul.products li.product{
     width: 100%;
    }
    .slick-track li{
