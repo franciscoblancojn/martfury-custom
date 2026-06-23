@@ -453,3 +453,19 @@ ul.products li.product .product-inner {
     max-width: 33%;
   }
 }
+.mf-product-thumbnail{
+    max-width: 100%;
+    overflow: hidden;
+}
+@media (max-width:991px) {
+  #sendbtn{
+    bottom: 100px !important;
+  }
+}
+@media (max-width:767px) {
+  .single-product .single_add_to_cart_button{
+    position: relative !important;
+    line-height: 52px !important;
+    height: 52px !important;
+  }
+}
