@@ -484,7 +484,7 @@ ul.products li.product .product-inner {
     font-size: 0px;
   }
   .button.product_type_variable.add_to_cart_button .add-to-cart-text::before{
-    content: "Ver opciones";
+    content: "Seleccionar";
     font-size: 16px;
   }
   .button.product_type_simple.add_to_cart_button .add-to-cart-text{
