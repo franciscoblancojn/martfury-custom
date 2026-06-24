@@ -487,4 +487,11 @@ ul.products li.product .product-inner {
     content: "Ver opciones";
     font-size: 16px;
   }
+  .button.product_type_variable.add_to_cart_button .add-to-cart-text{
+    font-size: 0px;
+  }
+  .button.product_type_simple.add_to_cart_button .add-to-cart-text::before{
+    content: "Añadir";
+    font-size: 16px;
+  }
 }
