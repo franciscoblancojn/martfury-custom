@@ -196,8 +196,9 @@
 [for="payment_method_wompi"] img {
   max-width: 115px;
 }
+[src="https://tedotamos.com/wp-content/plugins/wompi-portal-de-pagos/assets/img/wompi-logo.png"],
 .woocommerce-checkout #payment ul.payment_methods li img {
-  max-width: 115px;
+  max-width: 115px !important;
 }
 
 .woocommerce-cart.woocommerce-page .woocommerce-cart-form__cart-item p,
@@ -506,4 +507,7 @@ ul.products li.product .product-inner {
   .woocommerce ul.products li.product .product-inner{
     padding-inline: 0 !important;
   }
+}
+.mf-product-content{
+    min-height: 102px;
 }
