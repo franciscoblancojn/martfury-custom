@@ -370,7 +370,6 @@ ul.products li.product .product-inner {
 .slick-slider .slick-list,
 .slick-track {
   height: auto !important;
-  transform: none !important;
 }
 .woocommerce div.product div.images .flex-control-nav {
   position: relative;
