@@ -494,4 +494,8 @@ ul.products li.product .product-inner {
     content: "Añadir";
     font-size: 16px;
   }
+  .mobile-version.woocommerce div.product .product_title{
+    margin: 0;
+    position: relative;
+  }
 }
