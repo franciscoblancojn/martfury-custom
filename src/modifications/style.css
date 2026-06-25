@@ -501,4 +501,7 @@ ul.products li.product .product-inner {
   .woocommerce div.product .elementor-element{
     display: grid;
   }
+  .woocommerce ul.products li.product{
+    padding-inline: 5px !important;
+  }
 }
