@@ -498,4 +498,7 @@ ul.products li.product .product-inner {
     margin: 0;
     position: relative;
   }
+  .woocommerce div.product .elementor-element{
+    display: grid;
+  }
 }
