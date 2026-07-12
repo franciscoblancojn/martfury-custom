@@ -373,9 +373,10 @@ ul.products li.product .product-inner {
   height: auto !important;
 }
 .woocommerce div.product div.images .flex-control-nav {
-  position: relative;
-  top: 0;
+  position: absolute;
+  top: inherit;
   left: 0;
+  bottom: 0;
   width: 100%;
 }
 .woocommerce div.product div.images .product-image-ms,
